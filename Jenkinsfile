@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             agent {
                 docker {
-                    image 'adoptopenjdk/openjdk8'
+                    image 'ubuntu:20.04'
                 }
             }
             steps {
